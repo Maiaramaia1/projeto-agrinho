@@ -6,7 +6,7 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #cfe8ff; /* Azul claro */
 }
 
 /* Cabeçalhos */
@@ -61,4 +61,15 @@ footer {
     color: white;
     text-align: center;
     padding: 20px 0;
+}
+
+/* Correção da formatação das listas */
+ul {
+    list-style-type: disc; /* Mantém as bolinhas padrão */
+    padding-left: 20px; /* Adiciona espaçamento para evitar desalinhamento */
+    text-align: left; /* Mantém alinhamento correto dentro das seções */
+}
+
+li {
+    margin-bottom: 10px; /* Espaçamento entre os itens */
 }
