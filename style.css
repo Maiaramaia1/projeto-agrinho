@@ -6,7 +6,7 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
-    background-color: #cfe8ff; /* Azul claro */
+    background-color: #cfe8ff !important; /* Força o fundo azul claro */
 }
 
 /* Cabeçalhos */
@@ -66,10 +66,17 @@ footer {
 /* Correção da formatação das listas */
 ul {
     list-style-type: disc; /* Mantém as bolinhas padrão */
-    padding-left: 20px; /* Adiciona espaçamento para evitar desalinhamento */
-    text-align: left; /* Mantém alinhamento correto dentro das seções */
+    padding-left: 40px; /* Aumenta o espaçamento para evitar desalinhamento */
+    text-align: left;
 }
 
 li {
-    margin-bottom: 10px; /* Espaçamento entre os itens */
+    margin-bottom: 10px;
+    font-size: 18px; /* Ajuste do tamanho da fonte */
 }
+
+/* Força o fundo azul claro em todas as seções */
+.conteudo {
+    background-color: white !important;
+}
+
