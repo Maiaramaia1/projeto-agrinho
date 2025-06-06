@@ -11,7 +11,7 @@
             font-family: Arial, sans-serif;
             font-size: 18px;
             line-height: 1.6;
-            text-align: center;
+            text-align: left;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
@@ -20,6 +20,20 @@
         h1, h2, h3 {
             font-weight: bold;
             color: #2e7d32;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 2em; /* Tamanho maior para os subtítulos principais */
+            border-bottom: 2px solid #2e7d32; /* Linha para destacar */
+            padding-bottom: 5px;
+        }
+
+        h3 {
+            font-size: 1.5em; /* Subtítulos com tamanho reduzido */
+            color: #1b5e20; /* Cor de subtítulo mais suave */
+            margin-top: 20px;
+            margin-bottom: 10px;
         }
 
         img {
@@ -31,7 +45,7 @@
 
         .conteudo {
             width: 80%;
-            margin: auto;
+            margin: 20px auto;
             background: white;
             padding: 20px;
             border-radius: 8px;
@@ -46,6 +60,7 @@
             text-decoration: none;
             font-size: 20px;
             border-radius: 5px;
+            margin-top: 20px;
         }
 
         .cta-footer {
@@ -58,12 +73,32 @@
             text-decoration: none;
             border-radius: 5px;
         }
-        
+
         footer {
             background: #333;
             color: white;
             text-align: center;
             padding: 20px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #2e7d32;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            color: #1b5e20;
         }
     </style>
 </head>
