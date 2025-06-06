@@ -1,4 +1,4 @@
-/* Configuração geral do corpo */
+/* Ajustes básicos de fonte e imagens */
 body {
     font-family: Arial, sans-serif;
     font-size: 18px;
@@ -6,16 +6,22 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
-    background-color: #f3e8ff !important; /* Fundo lavanda claro para contraste */
+    background-color: #2e2e2e; /* Cor de fundo mais escura */
+    color: #fff; /* Texto branco para maior contraste */
 }
 
-/* Cabeçalhos */
-h1, h2, h3, h4, h5, h6 {
+/* Cabeçalhos (h1, h2, h3) com cor branca e roxa vibrante */
+h1, h2 {
     font-weight: bold;
-    color: #6a1b9a !important; /* Roxo */
+    color: #fff; /* Texto branco para cabeçalhos */
 }
 
-/* Imagens responsivas */
+h3 {
+    font-weight: bold;
+    color: #9c4dcc; /* Cor de roxo mais forte para o subtítulo */
+}
+
+/* Imagens com largura responsiva */
 img {
     max-width: 100%;
     height: auto;
@@ -23,22 +29,21 @@ img {
     margin: 20px auto;
 }
 
-/* Seções do conteúdo */
+/* Área de conteúdo com fundo mais escuro e sombra */
 .conteudo {
     width: 80%;
     margin: auto;
-    background: white;
+    background: #3c3c3c; /* Fundo mais escuro para o conteúdo */
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    background-color: white !important;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4); /* Sombra mais forte para destacar */
 }
 
-/* Estilização do botão */
+/* Estilização dos botões com cor roxa e transição de hover */
 .cta-button, .cta-footer {
     display: inline-block;
     padding: 10px 20px;
-    background: #6a1b9a; /* Roxo */
+    background: #9c4dcc; /* Roxo mais forte para os botões */
     color: white;
     text-decoration: none;
     font-size: 20px;
@@ -47,13 +52,60 @@ img {
 }
 
 .cta-button:hover, .cta-footer:hover {
-    background: #3a0c45; /* Roxo mais escuro para o hover */
+    background: #6a1b9a; /* Cor mais escura para o hover */
 }
 
-/* Estilização do rodapé */
+/* Rodapé com fundo escuro, texto claro e sombra */
 footer {
-    background: #333;
-    color: white;
+    background: #1a1a1a; /* Fundo bem escuro para o rodapé */
+    color: #fff; /* Texto branco para contraste */
     text-align: center;
     padding: 20px 0;
+    box-shadow: 0px -5px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Ajustes para centralizar a lista e os tópicos */
+ul {
+    list-style-type: disc; /* Mantém as bolinhas */
+    padding-left: 0; /* Remove o recuo padrão da lista */
+    text-align: left; /* Garante que o texto do item fique alinhado à esquerda */
+    margin: 0 auto; /* Centraliza a lista */
+    display: inline-block; /* Para que a lista não ocupe toda a largura */
+    width: auto; /* Ajusta a largura automaticamente */
+}
+
+ul li {
+    font-size: 18px;
+    color: #fff; /* Texto claro para os itens da lista */
+    margin-bottom: 10px; /* Espaço entre os itens */
+}
+
+/* Ajustes para os parágrafos dentro dos artigos */
+article p {
+    color: #fff; /* Cor branca para os parágrafos */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px; /* Ajusta o tamanho da fonte em dispositivos móveis */
+    }
+
+    .conteudo {
+        width: 90%; /* Aumenta a largura do conteúdo em dispositivos móveis */
+    }
+
+    h1 {
+        font-size: 2rem; /* Reduz o tamanho do título em dispositivos móveis */
+    }
+
+    .cta-button, .cta-footer {
+        font-size: 18px; /* Ajusta o tamanho da fonte para os botões */
+        padding: 8px 15px; /* Reduz o padding nos botões */
+    }
+
+    iframe {
+        width: 100%; /* Ajusta o tamanho do vídeo no celular */
+        height: auto; 
+    }
 }
